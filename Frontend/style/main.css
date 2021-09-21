@@ -1,0 +1,78 @@
+:root{
+    --main-bg-color :#eff5fe; 
+    --border-color : #0288d147;
+    --browse-btn-color : #2196f3 ;
+}
+
+body, html{   
+    background: var(--main-bg-color);
+    font-family: system-ui;
+    height: 100%;
+    margin : 0;
+    padding: 0;
+}
+
+body, .drop-zone{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.upload-container {
+    background: #ffffff;
+    border-radius: 25px;
+    box-shadow: 0px 20px 20px #0000002e;
+}
+
+.drop-zone{
+    width: 500px;
+    min-height: 200px;
+    border: 2px dashed var(--border-color);
+    margin: 30px;
+    border-radius: 10px;
+    transition: all 250ms ease;
+}
+
+.dragged-icon-container{
+    background: var(--main-bg-color);
+    border-color : #2196f3; ;
+}
+
+.icon-container{
+    width: 75px;
+    height: 100px;
+    position: relative;
+}
+
+.icon-container img{
+    width: 75px;
+    position: absolute;
+    transform-origin: bottom;
+    transition: transform 250ms ease-in-out;
+}
+
+.icon-container .left-file-icon, .icon-container .right-file-icon{
+    filter: grayscale(40%);
+}
+
+.icon-container .centre-file-icon{
+    z-index: 2;
+}
+
+.dragged-icon-container .left-file-icon{
+    transform: rotate(-10deg) translateX(-20px) scale(.84);
+}
+
+.dragged-icon-container .right-file-icon{
+    transform: rotate(10deg) translateX(20px) scale(.84);
+}
+
+.dragged-icon-container .centre-file-icon{
+    transform: translateY(-5px);
+}
+
+.browse-btn{
+    color: var(--browse-btn-color);
+    cursor: pointer;
+}
