@@ -38,6 +38,13 @@ app.set('views', path.join(__dirname, '/views'));
 app.set('view engine', 'ejs');
 //< -------  -------  -------  -------  -------  ------- >
 
+//< -------  To perform clean up without scheduler  ------- >
+app.use((req, res, next) => {
+  require('./script_cleanUp').cleanUp();
+  next()
+})
+//< -------  -------  -------  -------  -------  ------- >
+
 //< -------  -------  routes  -------  ------- >
 app.use('/api/files', require('./routes/files'));
 app.use('/files', require('./routes/show'));
