@@ -47,7 +47,7 @@ $ yarn install
 $ node server.js
 ```
 
-Server would be running at port 3000. Open any browser. Access the project - http://localhost:3000/
+Server would be running at port 3000.
 
 
 Also do not forget to rename `.env.example` into `.env` an put all credentials.
