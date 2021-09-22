@@ -1,5 +1,5 @@
 .env
-notes
+notes.txt
 uploads/*
 !uploads/.gitkeep
 node_modules

@@ -76,6 +76,11 @@ You need to set environment variables MONGO_CONNECTION_URL, SMTP_HOST, SMTP_PORT
     ├── .gitignore               # Git ignore files 
     └── server.js                # Node App start file
 
+## Screenshots
+
+![image](https://user-images.githubusercontent.com/69295097/134293065-da8e856d-4a1e-4e3c-a24c-3f6989d9b9aa.png)
+![image](https://user-images.githubusercontent.com/69295097/134293106-67b69e9d-fde1-4a29-84d4-ab9a57696bc9.png)
+![image](https://user-images.githubusercontent.com/69295097/134293174-06aff2b1-7bfb-457a-9635-a11e4668ffc9.png)
 
 
 ## Authors
