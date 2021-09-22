@@ -1,4 +1,5 @@
 .env
+notes
 uploads/*
 !uploads/.gitkeep
 node_modules
