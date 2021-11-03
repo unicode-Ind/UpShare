@@ -5,7 +5,7 @@ Rest api to power a file sharing functionality in application.
 >Built using Node, Express, Mongo.
 Uploaded files are available to download for next 24 hours
 
-Note : Send email might not working
+Note : Send email might not be working in deployed version
 Reason : 
 ```
 code: 'EMESSAGE',
