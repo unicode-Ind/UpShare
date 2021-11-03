@@ -10,19 +10,11 @@ module.exports = async ({ from, to, subject, text, html}) => {
             },
         });
         // send mail with defined transport object
-
-    try {
-        let info = await transporter.sendMail({
+    let info = await transporter.sendMail({
         from: `UpShare <${from}>`, // sender address
         to: to, // list of receivers
         subject: subject, // Subject line
         text: text, // plain text body
         html: html, // html body
     });
-        
-    } catch (error) {
-        console.log(error)
-    }
-
-    console.log(info);
 }

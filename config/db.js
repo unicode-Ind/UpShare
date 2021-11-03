@@ -9,6 +9,7 @@ function connectDB() {
         useUnifiedTopology: true, 
         useFindAndModify : true
     });
+    
     const connection = mongoose.connection;
     connection.once('open', () => {
         console.log('Database connected 🥳🥳🥳🥳');

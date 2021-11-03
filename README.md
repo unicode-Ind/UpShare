@@ -5,6 +5,17 @@ Rest api to power a file sharing functionality in application.
 >Built using Node, Express, Mongo.
 Uploaded files are available to download for next 24 hours
 
+Note : Send email might not working
+Reason : 
+```
+code: 'EMESSAGE',
+  response: '450 Your SMTP account is not yet activated. Please contact us at contact@sendinblue.com to request activation.',
+  responseCode: 450,
+  command: 'DATA'
+
+```
+
+
 
 ## Getting Started
 

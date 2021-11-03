@@ -56,7 +56,7 @@ router.post('/send', async (req, res) => {
     try {
       const file = await File.findOne({ uuid: uuid });
       if(file.sender) {
-        return res.status(422).send({ error: 'Email already sent once.'});
+        //return res.status(422).send({ error: 'Email already sent once.'});
       }
       file.sender = emailFrom;
       file.receiver = emailTo;
@@ -77,7 +77,7 @@ router.post('/send', async (req, res) => {
       }).then(() => {
         return res.json({success: true});
       }).catch(err => {
-        return res.status(500).json({error: 'Error in email sending.'});
+        return res.status(500).json({error: `Error in email sending. ${err}`});
       });
   } catch(err) {
     return res.status(500).send({ error: 'Something went wrong.'});
